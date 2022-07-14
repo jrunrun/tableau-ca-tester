@@ -1,0 +1,11 @@
+version: "3.3"
+   
+services:
+  python-env:
+    container_name: python-script
+    build:
+      context: .
+      dockerfile: Dockerfile_Dev
+    command: python tableau-rest-api-metadata-api.py
+    volumes:
+      - .:/code
