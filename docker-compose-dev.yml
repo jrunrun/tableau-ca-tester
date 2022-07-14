@@ -6,6 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_Dev
-    command: python tableau-rest-api-metadata-api.py
+    command: python tableau-ca.py
     volumes:
       - .:/code
