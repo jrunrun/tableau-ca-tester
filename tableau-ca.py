@@ -76,6 +76,8 @@ def auth_CA_JWT_RestAPI(ts_server, ts_site, ts_username, ts_ca_iss, ts_ca_kid, t
                 return response_auth
                 
             else:
+                response_auth = json.loads(r.content)
+                logger.info(json.dumps(response_auth, indent=4))
                 return ('Could not authenticate to tableau server api', str(r.status_code))    
 
 
