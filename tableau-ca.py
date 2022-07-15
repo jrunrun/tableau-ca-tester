@@ -71,10 +71,6 @@ def auth_CA_JWT_RestAPI(ts_server, ts_site, ts_username, ts_ca_iss, ts_ca_kid, t
                 response_auth = json.loads(r.content)
                 logger.info(json.dumps(response_auth, indent=4))
 
-   
-
-                return response_auth
-                
             else:
                 response_auth = json.loads(r.content)
                 logger.info(json.dumps(response_auth, indent=4))
@@ -93,4 +89,4 @@ ts_ca_secret = ''
 ts_api_version = '3.16'
 
 
-auth_CA_JWT_RestAPI(ts_server, ts_site, ts_username, ts_ca_iss, ts_ca_kid, ts_ca_secret, ts_serverType, ts_api_version)                
+auth_CA_JWT_RestAPI(ts_server, ts_site, ts_username, ts_ca_iss, ts_ca_kid, ts_ca_secret, ts_serverType, ts_api_version)  
