@@ -10,7 +10,7 @@ logging.basicConfig(format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:
     level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-from ca_list import ca_list
+from ca_list_private import ca_list
 
 def auth_CA_JWT_RestAPI(ca):
 
